@@ -79,6 +79,37 @@ class MainActivity : AppCompatActivity() {
         totalExpensesText.text = "Total Expenses: $$totalExpenses"
         balanceText.text = "Balance: $$balance"
 
+        // Decision logic based on balance
+        if (balance >= 0) {
+            expenseMessage.text = "You are saving money!"
+            expenseMessage.setTextColor(Color.GREEN)
+        } else {
+            expenseMessage.text = "You are overspending!"
+            expenseMessage.setTextColor(Color.RED)
+        }
+
+        // Expense percentage logic
+        analyzeExpenseCategory(food, "Food", income)
+        analyzeExpenseCategory(entertainment, "Entertainment", income)
+        analyzeExpenseCategory(utility, "Utility", income)
+        analyzeExpenseCategory(miscellaneous, "Miscellaneous", income)
+    }
+
+    private fun analyzeExpenseCategory(expense: Double, category: String, income: Double) {
+        val expensePercentage = (expense / income) * 100
+        val expenseCategoryText = TextView(this)
+        expenseCategoryText.text = "$category Expense: $$expense"
+
+        if (expensePercentage > 30) {
+            expenseCategoryText.setTextColor(Color.RED)
+            expenseMessage.append("\nWarning: $category is too high! Consider cutting back.")
+        } else if (expensePercentage < 5) {
+            expenseCategoryText.setTextColor(Color.GREEN)
+            expenseMessage.append("\nGreat! You're keeping $category expenses low.")
+        } else {
+            expenseCategoryText.setTextColor(Color.BLACK)
+            expenseMessage.append("\n$category expenses are within a reasonable range.")
+        }
     }
 
     // Helper method to check if a string is numeric
