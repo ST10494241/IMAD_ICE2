@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,51 +13,253 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Income"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/edtIncome"
-        android:layout_width="wrap_content"
+        android:layout_width="348dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
         android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="46dp" />
+        android:hint="Enter the income"
+        android:inputType="number"
+        android:minHeight="48dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Expenses"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="120dp" />
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"/>
 
-    <EditText
-        android:id="@+id/edtExpenses"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        tools:layout_editor_absoluteX="19dp"
-        tools:layout_editor_absoluteY="141dp" />
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense Name" />
+
+            <EditText
+                android:id="@+id/expenseName1"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the expense Name"
+                android:inputType="number"
+                android:minHeight="48dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense Amount"/>
+
+            <EditText
+                android:id="@+id/amount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the expense Name"
+                android:int="Enter the expense amount"
+                android:inputType="number"
+                android:minHeight="48dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense Name" />
+
+            <EditText
+                android:id="@+id/expenseName2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the expense Name"
+                android:inputType="number"
+                android:minHeight="48dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense Amount"/>
+
+            <EditText
+                android:id="@+id/amount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the expense amount"
+                android:inputType="number"
+                android:minHeight="48dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense Name" />
+
+            <EditText
+                android:id="@+id/expenseName3"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the expense Name"
+                android:inputType="number"
+                android:minHeight="48dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense Amount"/>
+
+            <EditText
+                android:id="@+id/amount3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the expense amount"
+                android:inputType="number"
+                android:minHeight="48dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense Name" />
+
+            <EditText
+                android:id="@+id/expenseName4"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the expense Name"
+                android:inputType="number"
+                android:minHeight="48dp"
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense Amount"/>
+
+            <EditText
+                android:id="@+id/amount4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter the expense amount"
+                android:inputType="number"
+                android:minHeight="48dp" />
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculate Balance"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="208dp" />
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/txtTotalIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:text="Total Income:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtTotalExpense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:text="Total Expense:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:text="Total Income:"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/txtOutput"
-        android:layout_width="333dp"
-        android:layout_height="236dp"
-        android:text="Output Box"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="288dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="15dp"
+        android:text="Status:"
+        android:textSize="15sp" />
+</LinearLayout>
