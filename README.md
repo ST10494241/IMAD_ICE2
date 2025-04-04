@@ -29,6 +29,8 @@ Depending on the percentage:
 ## 📷 Screenshots
 
 ### Figure 1: Balanced Budget – Moderate Expenses
+![Screen Shot 2025-04-04 at 10 33 05 PM](https://github.com/user-attachments/assets/18012099-99a5-477f-948d-322942e97f75)
 
 ### Figure 2: Overspending Warning
+![Screen Shot 2025-04-04 at 10 35 16 PM](https://github.com/user-attachments/assets/917d8e85-727f-4459-9831-09391df8b1ab)
 
